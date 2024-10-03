@@ -19,11 +19,17 @@ This project is a Student Course Management System built using Spring Boot, with
 # Technologies Used
 
 1.Java 17.
+
 2.Spring Boot 3.3.3.
+
 3.Spring Data JPA.
+
 4.MySQL for database.
+
 5.Hibernate for ORM.
+
 6.Lombok for reducing boilerplate code.
+
 7.Maven for dependency management.
 
 
