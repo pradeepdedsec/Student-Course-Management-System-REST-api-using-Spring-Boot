@@ -58,7 +58,7 @@ This project is a Student Course Management System built using Spring Boot, with
 
 # Setup Instructions
 
-git clone https://github.com/your-username/student-course-management-system.git.
+git clone https://github.com/your-username/student-course-management-system.git
 
 
 
