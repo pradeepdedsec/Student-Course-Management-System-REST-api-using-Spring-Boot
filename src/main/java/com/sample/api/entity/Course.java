@@ -9,12 +9,9 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.OneToOne;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
-//import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -31,7 +28,6 @@ public class Course {
     private Long id;
 
     @NotBlank(message = "Name cannot be blank")
-    @NonNull
     private String title;
 
     private int credits;
@@ -47,11 +43,6 @@ public class Course {
     @OneToOne(
         mappedBy = "course"
     )
-    @NotBlank(message = "Name cannot be blank")
-    @NotNull
     @JsonIgnore
-    @JoinColumn(
-        name = "teacher_id"
-    )
     private Teacher teacher;
 }

@@ -36,6 +36,13 @@ public class TeacherServiceImpl  implements TeacherService{
     }
 
     @Override
+    public Teacher updateTeacher(Teacher teacher) {
+        Long id = teacher.getId();
+        unwrapTeacher(teacherRepository.findById(id), id);
+        return teacherRepository.save(teacher);
+    }
+
+    @Override
     public void deleteTeacher(Long id) {
         Teacher teacher=unwrapTeacher(teacherRepository.findById(id), id) ;
         teacherRepository.delete(teacher);

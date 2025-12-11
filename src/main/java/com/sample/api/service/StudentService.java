@@ -23,6 +23,7 @@ public interface StudentService {
     Set<Student> getStudentsByGaurdianName(String guardianName);
     Set<Student> getStudentsByGaurdianList(List<Guardian> gaurdians);
     Student saveStudent(Student student);
+    Student updateStudent(Student student);
     void deleteStudent(Long id);
     Set<Course> getEnrolledCourses(Long id);
     public void insertData();

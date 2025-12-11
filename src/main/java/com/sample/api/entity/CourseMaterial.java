@@ -27,7 +27,7 @@ public class CourseMaterial {
 
     @JsonIgnore
     @OneToOne(
-        cascade = CascadeType.ALL
+        cascade = CascadeType.MERGE
     )
     @JoinColumn(name = "course_id")
     private Course course;

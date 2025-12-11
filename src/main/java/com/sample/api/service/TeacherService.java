@@ -12,6 +12,7 @@ public interface TeacherService {
     Teacher getTeacher(Long id);
     Teacher getTeacherByCourseId(Long courseId);
     Teacher saveTeacher(Teacher teacher);
+    Teacher updateTeacher(Teacher teacher);
     void deleteTeacher(Long id);
     List<Teacher> getTeachers();
     static Teacher unwrapTeacher(Optional<Teacher> entity, Long id) {

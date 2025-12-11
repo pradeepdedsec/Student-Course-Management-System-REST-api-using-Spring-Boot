@@ -13,6 +13,7 @@ import com.sample.api.exception.CourseNotFoundException;
 public interface CourseService {
     Course getCourse(Long id);
     Course saveCourse(Course course);
+    Course updateCourse(Course course);
     void deleteCourse(Long id);    
     Course addStudentToCourse(Long studentId, Long courseId);
     Course getCourseByTeacherId(Long id);

@@ -37,6 +37,13 @@ public class CourseServiceImpl implements CourseService {
     }
 
     @Override
+    public Course updateCourse(Course course) {
+        Long id = course.getId();
+        unwrapCourse(courseRepository.findById(id), id);
+        return courseRepository.save(course);
+    }
+
+    @Override
     public void deleteCourse(Long id) {  
         Course course=unwrapCourse(courseRepository.findById(id), id);
         courseRepository.delete(course);      

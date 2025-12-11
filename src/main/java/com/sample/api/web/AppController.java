@@ -24,7 +24,7 @@ public class AppController {
         return "hello world";
     }
 
-    @GetMapping("/Data")
+    @GetMapping("/data")
     public Set<Student> getMethodName2() {
         return studentService.getStudentsByGaurdian(null);
     }
