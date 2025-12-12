@@ -5,12 +5,14 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.sample.api.entity.Course;
 import com.sample.api.entity.Teacher;
 import com.sample.api.exception.TeacherNotFoundException;
 import com.sample.api.repo.TeacherRepository;
 
+@Service
 public class TeacherServiceImpl  implements TeacherService{
 
     @Autowired
