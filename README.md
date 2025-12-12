@@ -40,19 +40,37 @@ This project is a Student Course Management System built using Spring Boot, with
 
 # Endpoints
 
-1.GET / - Initialize and load sample data.
+1. GET /                   - Initialize and load sample data.
 
-2.GET /Data - Retrieve students by guardian.
+2. GET /data               - Retrieve students by guardian.
 
-3.GET /students - Get all students.
+3. GET /student/{id}       - Get a specific student by ID.
 
-4.POST /students - Add a new student.
+4. GET /teacher/{id}       - Get a specific teacher by ID.
 
-5.GET /courses/{id}/students - Get students enrolled in a course.
+5. GET /course/{id}        - Get a specific course by ID.
 
-6.DELETE /students/{id} - Delete a student by ID.
+6. GET /actuator           - Actuator root web endpoint.
 
+7. GET /actuator/mappings  - Actuator web endpoint 'mappings'.
 
+8. POST /student           - Add a new student.
+
+9. POST /teacher           - Add a new teacher.
+
+10. POST /course           - Add a new course.
+
+11. PUT /student           - Update student details.
+
+12. PUT /teacher           - Update teacher details.
+
+13. PUT /course            - Update course details.
+
+14. DELETE /student/{id}   - Delete a student by ID.
+
+15. DELETE /teacher/{id}   - Delete a teacher by ID.
+
+16. DELETE /course/{id}    - Delete a course by ID.
 
 
 
